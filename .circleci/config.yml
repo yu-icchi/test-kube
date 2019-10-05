@@ -15,5 +15,5 @@ jobs:
       - run:
           name: kubectl command
           command: |
-            export KUBECONFIG="$(kind get kubeconfig-path --name="kind")"
+            export KUBECONFIG="$(./kind get kubeconfig-path --name="kind")"
             kubectl get nodes
