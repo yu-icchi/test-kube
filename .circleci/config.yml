@@ -16,7 +16,7 @@ jobs:
             chmod +x ./kind
       - run:
           name: Create Cluster
-          command: ./kind create cluster
+          command: ./kind create cluster --config cluster.yaml
       - run:
           name: kubectl command
           command: |
